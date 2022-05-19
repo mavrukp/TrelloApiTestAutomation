@@ -47,7 +47,7 @@ public class TrelloOrganizationApi extends TrelloBase{
                     .when()
                     .delete();
         } catch (IllegalArgumentException e) {
-            logger.error("IllegalArgumentException Exception in post request ");
+            logger.error("IllegalArgumentException Exception in delete request ");
             return response;
         }
         return response;

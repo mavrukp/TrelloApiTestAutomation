@@ -59,7 +59,7 @@ public class TrelloBoardApi extends TrelloBase {
                     .when()
                     .get();
         } catch (IllegalArgumentException e) {
-            logger.error("IllegalArgumentException Exception in post request ");
+            logger.error("IllegalArgumentException Exception in get request ");
             return response;
         }
         return response;
@@ -81,7 +81,7 @@ public class TrelloBoardApi extends TrelloBase {
                     .when()
                     .delete();
         } catch (IllegalArgumentException e) {
-            logger.error("IllegalArgumentException Exception in post request ");
+            logger.error("IllegalArgumentException Exception in delete request ");
             return response;
         }
         return response;
